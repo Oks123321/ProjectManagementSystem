@@ -1,7 +1,7 @@
 package ua.goit.dev6.command;
 
 public class Developer {
-    Integer id;
+    long id;
     String first_name;
     String last_name;
     int age;

@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS projects_developers_relation (
     FOREIGN KEY (developers_id) REFERENCES developers(id)
 );
 
-ALTER TABLE projects_developers_relatoion owner to postgres;
+ALTER TABLE projects_developers_relation owner to postgres;
 
 CREATE TABLE skills (
     id SERIAL PRIMARY KEY,

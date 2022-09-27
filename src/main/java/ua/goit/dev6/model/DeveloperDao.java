@@ -3,11 +3,11 @@ package ua.goit.dev6.model;
 import ua.goit.dev6.command.Developer;
 
 public class DeveloperDao {
-    Integer id;
+    long id;
     String first_name;
     String last_name;
     int age;
-    Developer.Gender gender;
+    Gender gender;
 
     public enum Gender{
         male,
@@ -15,7 +15,7 @@ public class DeveloperDao {
         unknown
     }
 
-    public DeveloperDao(Integer id, String first_name, String last_name, int age, Developer.Gender gender) {
+    public DeveloperDao(long id, String first_name, String last_name, int age, Gender gender) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -23,7 +23,7 @@ public class DeveloperDao {
         this.gender = gender;
     }
 
-    public DeveloperDao(String first_name, String last_name, int age, Developer.Gender gender) {
+    public DeveloperDao(String first_name, String last_name, int age, Gender gender) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.age = age;
@@ -33,11 +33,11 @@ public class DeveloperDao {
     public DeveloperDao() {
     }
 
-    public Integer getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -65,11 +65,12 @@ public class DeveloperDao {
         this.age = age;
     }
 
-    public Developer.Gender getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(Developer.Gender gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
+
 }
