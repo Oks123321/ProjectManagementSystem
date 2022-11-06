@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertiesConfig {
-
     public Properties loadProperties(String filePath) {
         try (InputStream stream = getClass().getClassLoader().getResourceAsStream(filePath);) {
             Properties properties = new Properties();
